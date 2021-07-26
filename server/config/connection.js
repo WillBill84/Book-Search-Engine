@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/CRUD App', {
+
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/CRUD-App', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
@@ -8,3 +9,4 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/CRUD App', {
 });
 
 module.exports = mongoose.connection;
+
